@@ -61,7 +61,7 @@ To enable Google Analytics on Eggspress, we'll need to copy and paste (or manual
 4. Assign `googleAnalyticsPropertyId` the value that is your tag ID
 5. Save this file onto your computer
 
-```
+```yaml
 googleAnalyticsPropertyId: "G-XXXXXXXXXX"
 ```
 

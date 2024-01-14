@@ -40,7 +40,7 @@ Here's how you can use custom rules to add Amazon Associates tracking ID's to yo
 ## Configuring links.md
 To add your tracking ID to your amazon links, set `modifyLink` keys in the `my_settings/links.md` file to the following:
 
-```
+```yaml
 modifyLinkBaseUrl1: "amazon"
 modifyLinkStrictMatch1: false
 modifyLinkSetPrefix1: ""
