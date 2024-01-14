@@ -61,7 +61,7 @@ The file `my_settings/links.md` includes a set of keys that start with `modifyLi
 
 Out of the box, Eggspress comes preset with one rule as an example. You may replace this rule.
 
-```
+```yaml
 modifyLinkBaseUrl1: "opencourser.com"
 modifyLinkStrictMatch1: true
 modifyLinkSetPrefix1: ""
@@ -121,7 +121,7 @@ To replace a host, set `modifyLinkSetNewBaseUrl`. The value used in this key wil
 
 For example, to update all of your Twitter links to use the new domain for X, you would set:
 
-```
+```yaml
 modifyLinkBaseUrl1: "twitter.com"
 modifyLinkStrictMatch1: true
 modifyLinkSetPrefix1: ""

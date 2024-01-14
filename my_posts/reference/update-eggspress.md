@@ -41,7 +41,7 @@ The easiest way to sync your fork is to navigate to your *forked* repository pag
 
 On this page look for a message above the list of repository files that reads:
 
-```
+```plaintext
 This branch is *x* commits ahead, *y* commits behind dentonzh:main
 ```
 

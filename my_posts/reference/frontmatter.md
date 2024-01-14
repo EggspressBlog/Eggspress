@@ -73,7 +73,7 @@ The first two examples are valid:
 
 ### Date and time
 Date and time uses the Date Time String Format as [defined here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format). The format looks like this:
-```
+```yaml
 YYYY-MM-DDTHH:mm:ss.sssZ
 ```
 

@@ -4,7 +4,7 @@ subheading: Learn how files in Eggspress work and how to edit them
 image: ""
 imagePositionY: "85"
 imagePositionX: "50"
-weight: 50
+weight: 45
 date: 2023-11-23T00:00:00-0400
 author: denton
 snippet: In this fifth and final part of our Getting Started Guide, we'll walk you through how to edit files in your workspace and customize their appearance to get the results you want.
@@ -16,7 +16,7 @@ nextPost: ""
 relatedPost1: "frontmatter"
 relatedPost2: "using-templates"
 relatedPost3: "linking-internal-content"
-relatedPost4: ""
+relatedPost4: "syntax-highlighting"
 ---
 
 
@@ -121,7 +121,8 @@ File extensions help determine the file type. You may be familiar with some alre
 Files ending in `.md` (or `.mdx`) tell Eggspress that we're working with text styled with **Markdown**, which is widely used for its simple-to-use syntax. This makes it perfectly suited for blogging or authoring websites.
 
 Instead of having to write code like this:
-```
+
+```html
 <h2>Editing your content files</h2>
 <p>If you've made it this far...</p>
 <p>In <strong>Eggspress</strong>, every content file is...</p>
@@ -131,13 +132,14 @@ Instead of having to write code like this:
 ```
 
 You need only write:
-```
+
+```markdown
 ## Editing your content files
 If you've made it this far...
 In **Eggspress**, every content file is...
 **Markdown** is a file type with...
 Instead of having to write code like:
-\```
+\`\`\`
 (the previous block of code)
 \```
 ```
