@@ -16,7 +16,7 @@ author: "denton"
 snippet: "Eggspress lets you write JSX in your Markdown files. In this article, we'll show you how you can embed dynamic, interactive, React components directly in your Markdown content."
 description: "Eggspress lets you write JSX in your Markdown content. You can also create your own React components and embed them. Here's how."
 sidebar: "eggspress_links"
-category: "guide"
+category: "how-to"
 prevPost: ""
 nextPost: ""
 relatedPost1: "editing-content"
@@ -85,10 +85,11 @@ Possible use cases for this component are:
 
 This file resembles any any other React component you may have encountered.
 
-It accepts three props, `text`, `page`, `linkText`, all of which are optional:
+It accepts three props, `text`, `page`, `linkText`, all of which are optional.
 
+If the `text` prop is left empty, default text will appear for FTC affiliate disclosure (the most common use case for this kind of component on a blog).
 
-If the `text` prop is left empty, default text will appear for FTC affiliate disclosure (the most common use case for this kind of component on a blog). An author may replace this default text by specifying their own text. For example:
+An author may replace this default text by specifying their own text. For example:
 
 `<Disclosure text="Please consult with your physician before following the advice on this page" />`
 
@@ -148,7 +149,12 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 ```
 
-And here is how you might pass "props" to it, replacing the text that appears and providing it with a custom page to link to (in this example, to `/page/medical-disclosure`):
+And how it appears when you insert it into content:
+
+<Disclosure />
+
+
+We can pass "props" to it, replacing the text that appears and providing it with a custom page to link to (in this example, to `/page/medical-disclosure`) like so:
 
 ```markdown
 
@@ -159,6 +165,10 @@ And here is how you might pass "props" to it, replacing the text that appears an
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...
 
 ```
+
+When inserted into content, this component looks like this:
+
+<Disclosure text="Please consult with your physician before following the advice on this page" page="medical-disclosure" link-text="Learn more" />
 
 ## A word of caution
 Using custom components increases the possibility of inadvertently introducing build errors. If you encounter build issues, read about [how to troubleshoot your build](troubleshooting-your-build).
