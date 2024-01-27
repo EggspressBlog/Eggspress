@@ -32,7 +32,7 @@ relatedPost9: ""
 
 Eggspress lets you create your own custom components and embed them directly into Markdown content. With these, you can add dynamic and interactive elements to your pages with ease.
 
-![](my_posts/guide/images/Pasted%20image%2020240127133256.png)
+![](my_posts/guide/images/mechanic.jpg)
 
 ## Who this is written for
 Anyone can use custom components. This article includes instructions for using *and* creating them.
