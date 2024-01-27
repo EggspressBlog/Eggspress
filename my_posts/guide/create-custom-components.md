@@ -1,5 +1,5 @@
 ---
-title: create-custom-components
+title: "Create Custom Components"
 subtitle: "Using React / JSX"
 subheading: "Learn how to use React components in your Eggspress content"
 isVisible: true
