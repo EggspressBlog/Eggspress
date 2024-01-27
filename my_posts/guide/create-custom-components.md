@@ -160,7 +160,7 @@ We can pass "props" to it, replacing the text that appears and providing it with
 
 **Lorem ipsum** dolor sit amet, *consectetur adipiscing elit*, sed do eiusmod tempor incididunt...
 
-<Disclosure text="Please consult with your physician before following the advice on this page" page="medical-disclosure" link-text="Learn more" />
+<Disclosure text="Please consult with your physician before following the advice on this page" page="medical-disclosure" linkText="Learn more" />
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...
 
