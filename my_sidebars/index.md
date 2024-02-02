@@ -1,6 +1,6 @@
 ---
 pinnedPost1: "getting-started"
-pinnedPost2: ""
+pinnedPost2: "quick-start"
 pinnedPost3: ""
 
 heading1: ""
