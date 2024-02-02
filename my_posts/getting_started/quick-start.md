@@ -33,9 +33,9 @@ relatedPost9: ""
 This Quick Start guide is designed to help you **launch quickly**. In the interest of time, it glosses over many details. 
 
 Use this guide to:
-- take Eggspress for a test drive
-- start a "disposable" website
-- refresh yourself on setting up
+- Take Eggspress for a test drive
+- Start a "disposable" website
+- A refresher on how to set up
 
 Have questions? Need more help? Try the more comprehensive [Getting Started](/getting-started) guide.
 
@@ -44,30 +44,24 @@ Have questions? Need more help? Try the more comprehensive [Getting Started](/ge
 ![Eggspress characters racing for speed](racing.jpeg)
 
 ## Github and Vercel
-Begin by creating an account on [Github](https://github.com) and [Vercel](https://vercel.com). 
+Begin by creating an account on [Github](https://github.com) and [Vercel](https://vercel.com).
 
-When creating accounts on Github and Vercel, you will **not** need to provide payment/billing information.
+Create your Github account first. When it's ready, sign up for Vercel by selecting "Continue with Github."
 
-Create your Github account first. When that's ready, sign up for Vercel by selecting "Continue with Github."
+> **Important:** Keep your login credentials for Github safe. You'll need these to make changes to your site.
 
-> Keep your login credentials for Github safe. You'll need these to make changes to your site.
-
-For the remainder of this guide, you will open multiple tabs for Github and Vercel. **Keep these open**. We will be jumping between them.
+For the remainder of this guide, you will open multiple tabs for Github and Vercel. **Keep these open** as we will jump between them.
 
 ## Install Eggspress
 Install Eggspress onto your Github account by [creating a fork of it](https://github.com/dentonzh/Eggspress/fork).
-
 
 ![Screenshot of Github's New Fork page with the Create Fork button visible](Pasted%20image%2020231125172256.png)
 
 Give your project a name and a description. When you're reading, click **"Create Fork"**.
 
-You'll see a spinner appear as Github forks Eggspress for you. When your fork is ready, you'll be taken to the page for your **forked repository**. 
+A spinner will appear as Github forks Eggspress for you. When your fork is ready, you'll be taken to the page for your **forked repository**. 
 
 This is your personal copy of Eggspress. We strongly recommend **bookmarking** or **saving the link** someplace as you will need to access this page whenever you wish to make changes.
-
-> **Good to know:** Github is where we will store our files. These include the software that makes Eggspress what it is as well as all of your content files, preferences, and custom components.
-
 ## Put your site on the web
 1. On **Vercel**, [add a new project](https://vercel.com/new). 
 
@@ -99,7 +93,7 @@ We strongly recommend **bookmarking** or **saving the link** to your new site.
 
 ![Screenshot of Vercel's deployments page with the Visit button visible](Pasted%20image%2020231126192841.png)
 
-## Set up and upload your workspace
+## Set up your workspace folder
 Your workspace folder holds all of your content and settings.
 
 For your convenience, Eggspress provides a starter workspace.
@@ -108,37 +102,44 @@ For your convenience, Eggspress provides a starter workspace.
 
 ![Eggspress race heating up](racing_close.jpeg)
 
-To use this starter workspace, first create a folder on your computer in a location you'll remember.
+To use this starter workspace, you'll need to perform a few steps.
+
+**On your computer**, create a folder someplace you'll remember.
 
 When your folder is ready:
 
-1. Click the big green download button on your site and save the `eggspress_starter_workspace.zip` file
+1. Click the green button **on your site** and save **eggspress_starter_workspace.zip**
 2. **Extract** (expand) the contents of this file into your **workspace folder**
 3. Open your **workspace folder**
 
 You should now see many folders whose names start with `my_`. If not, repeat steps 1-3.
 
-4. **Upload your workspace** to your forked repository
-
+## Upload your workspace folder
 **Back on Github**, navigate to your forked repository.
 
 On this page, click on the button labeled **"Add files"** or with the **"+"** sign. This will bring up a dropdown menu. Select **"Upload files"**.
 
-This will take you to an upload page.
+This will take you to an upload page. Here, you'll see a large box labeled "Drag files here to add them to your repository."
 
-5. Drag and drop all of the folders starting with `my_` into the box labeled "Drag files here to add them to your repository"
-6. Wait for files to upload, then scroll until you see **"Commit Files"**
-7. Provide a Commit message (something like "Upload initial workspace" is sufficient)
-8. Click **"Commit"**
+To upload your files:
+
+1. Drag and drop folders starting with `my_` into the box
+2. Wait for files to upload, then scroll until you see **"Commit Files"**
+3. Provide a Commit message (optional)
+4. Click **"Commit"**
 
 ![Screenshot representing dragging and dropping workspace folders into Github for uploading](Pasted%20image%2020231125173322.png)
 
 ## Building your new site
-Vercel will automatically build your new site. You will not need to take further action unless you run into issues.
+When you commit your files on Github:
+1. Github will update your forked repository
+2. Vercel will build your site with your new files
 
-Generally, it takes about **2-3 minutes** from the time you click "Commit" on Github to Vercel completing your build.
+This happens automatically. No action is required from you.
 
-When your build is ready, visit your site to see your new changes take effect. You may need to refresh your site.
+Generally, it takes about **2-3 minutes** from the moment you click "Commit" to the point where your new site is ready.
+
+After this amount of time has passed, try visiting your site. You may need to refresh it.
 
 If you do not see your changes, see [troubleshoot your build](my_posts/troubleshooting/troubleshooting-your-build.md).
 
@@ -149,25 +150,31 @@ If you do not see your changes, see [troubleshoot your build](my_posts/troublesh
 ## Customize your site
 On your computer, open the `my_settings` folder.
 
-Each file in this folder represents a category of settings you can adjust to your liking.
+Open the file `metadata.md` in your favorite Markdown editor. If you don't have a Markdown editor yet, we recommend [using Obsidian](my_posts/reference/configure-obsidian.md).
 
-The most important file for setting up a new site is `metadata.md`. You'll be able to adjust your settings for your site's name, create a subtitle and subheading, etc.
+Otherwise, use a basic text editor like Notepad or TextEdit.
 
-Open this file in your favorite Markdown editor. If you don't have a Markdown editor yet, we recommend [using Obsidian](my_posts/reference/configure-obsidian.md) for the best experience. 
+Every content file in Eggspress contains a set of key-pair values in a section called **frontmatter**. This section appears at the top of most content files.
 
-Otherwise, choose a simple text editor like Notepad or TextEdit.
+The values you set in **frontmatter** tell Eggspress how to build your site. Learn more about [frontmatter and how it works in Eggspress](my_posts/reference/frontmatter.md).
 
-In `metadata.md`, you'll see a set of key-pair values in a section called **frontmatter**. This section appears at the top of most content files.
+`metadata.md` contains **frontmatter** for organizing basic information about your site, like its `title` and `description`. We recommend filling out all of these fields.
 
-**Frontmatter** contains important information that tells Eggspress how to build your site or certain pages. Learn more about [frontmatter and how it works in Eggspress](my_posts/reference/frontmatter.md).
+To set your new site's name to "My New Website," set:
 
-`my_settings/metadata.md` contains **frontmatter** for organizing basic information about your site, like its `title` and `description`. We recommend filling out all of these fields.
+`title: "My New Website"`
 
 > If you are using a custom domain, you **must** provide a value to `metaBaseUrl` (e.g. `https://eggspress.org` is the value for this documentation site). 
 > 
 > Otherwise, you **must** leave this blank.
 
-Next, we recommend editing `appearance.md`. Frontmatter in this file help you configure how your site appears, such as the color scheme to display.
+Next, open`appearance.md`, which provides lets you determine how your site appears to visitors.
+
+To use the "seaside" color scheme, for example, set:
+
+`colorScheme: "seaside"`
+
+To see a complete list of available color schemes or to create your own, see the `colors` folder in `my_settings`.
 
 ## Publishing your content
 You can create new posts and pages by copying and pasting template files found in `my_templates.` 
@@ -193,8 +200,11 @@ Eggspress comes choc full of features, some of which drastically improve the aut
 
 In the **Related Posts** section below, we link a few helpful posts you may wish to read to get the most out of Eggspress.
 
-As always, your feedback is welcome. 
+## Give us feedback
+Leave a comment, report a bug, ask questions, or suggest new features by using your Github account to [create an issue](https://github.com/dentonzh/Eggspress/issues/new).
 
-You can leave your feedback, report a bug, ask questions, or suggest new features by using your Github account to [create an issue](https://github.com/dentonzh/Eggspress/issues/new).
+Please also consider giving us a star on [our main repository](https://github.com/dentonzh/Eggspress).
+
+Thanks for using Eggspress!
 
 ![First place racer](winner.jpeg)
