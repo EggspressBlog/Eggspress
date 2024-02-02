@@ -4,8 +4,8 @@ subheading: "Eggspress helps you build your website"
 sidebar: "What is Eggspress?"
 weight: 1
 subtitle: ""
-isVisible: false
-isArchived: true
+isVisible: true
+isArchived: false
 isContentHidden: false
 contentMessage: ""
 ---
