@@ -28,23 +28,28 @@ Eggspress uses [Github Flavored Markdown](https://github.github.com/gfm/), which
 ## Speed and simplicity
 Out of the box, Eggspress is blisteringly fast.
 
-It prioritizes simplicity, but delivers on most core features and then some.[^4] Pages are minimal because your content comes first. Need more minimalism? You can turn off most elements that appear on your page.[^5]
+This is in part due to its simplicity.[^4] Pages are minimal because your content comes first. Need more minimalism? You can turn off most elements that appear on your page.[^5]
 
-With simplicity comes speed. On Eggspress, we've fine-tuned everything for performance Even visitors on slower connections and devices will fly through your pages with fast load times.[^5]
+Eggspress is also fast because we've fine-tuned everything for performance. Now everyone can enjoy your work the way it was meant to be. Even visitors on slower connections and devices will fly through your pages with fast load times.[^5]
 
 ## Extensible
-Eggspress uses MDX, which allows authors to add custom (React) components directly into their content.
+Eggspress uses MDX, which allows you to add custom (React) components directly into your Markdown content.
 
-Using these, you can insert interactive charts and diagrams, live market data, and much more. 
+Components can do a lot of things. Use them to insert interactive charts and diagrams, live market data, post data from your visitors (like leaving a comment or signing up for your newsletter), and much more.
 
-Found an Eggspress component that someone else created? Add it to your site just by copying that component into your `my_components` folder.
+Found an Eggspress component that someone else shared? Add it to your site just by copying that component into your `my_components` folder.
 
 Learn more about how to [create / add your own components](my_posts/guide/create-custom-components.md).
+
+## Ready to get started?
+Follow our [comprehensive guide for setting up](my_posts/getting_started/getting-started.md). It's filled with delightful egg art and helpful screenshots.
+
+Familiar with tools like Github and Vercel? Or want to take Eggspress for a spin without all of the nitty gritty details? Check out our 20-minute [Quick Start guide](my_posts/getting_started/quick-start.md).
 
 
 [^1]: If you want to be discovered by new visitors, you'll still be subjected to the whims of search engines like Google. Thankfully, Eggspress comes SEO-ready, meaning your content will be optimized to appear in search indexes
 [^2]: Platforms like Facebook, Instagram, and LinkedIn have always had a sign-in wall that require visitors to register and login before viewing content posted to them—X (formerly Twitter) and Medium have recently hopped on this bandwagon
 [^3]: Eggspress uses Github Flavored Markdown to enable support for footnotes and tables, which are not supported by CommonMark
-[^4]: Notably absent are reaction buttons (e.g. likes) or comments, which are presently unavailable on Eggspress, but can be enabled through the use of custom components
+[^4]: Some of this comes at the loss of some features such as reaction buttons (e.g. likes) and comments, which are presently unavailable on Eggspress, but can be enabled through the use of custom components
 [^5]: You can turn off share buttons, previous/next post links, related posts, pinned posts, author cards, etc. and even customize the strings that appear on your site so they're less verbose
 [^6]: Eggspress uses a compact version of Google Analytics, so you can even keep Analytics on without it affecting speed
