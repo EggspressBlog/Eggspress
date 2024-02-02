@@ -28,14 +28,16 @@ Eggspress uses [Github Flavored Markdown](https://github.github.com/gfm/), which
 ## Speed and simplicity
 Out of the box, Eggspress is blisteringly fast.
 
-It prioritizes simplicity, but delivers on most core features and then some.[^4] Pages are minimal because your content comes first. You can even turn off most other elements that appear on your page.[^5]
+It prioritizes simplicity, but delivers on most core features and then some.[^4] Pages are minimal because your content comes first. Need more minimalism? You can turn off most elements that appear on your page.[^5]
 
-Everything is fine-tuned for speed. Even visitors on slower connections and devices will fly through your pages with fast load times.[^5]
+With simplicity comes speed. On Eggspress, we've fine-tuned everything for performance Even visitors on slower connections and devices will fly through your pages with fast load times.[^5]
 
 ## Extensible
 Eggspress uses MDX, which allows authors to add custom (React) components directly into their content.
 
-Insert charts, interactive diagrams, live market data, and much more with these components.
+Using these, you can insert interactive charts and diagrams, live market data, and much more. 
+
+Found an Eggspress component that someone else created? Add it to your site just by copying that component into your `my_components` folder.
 
 Learn more about how to [create / add your own components](my_posts/guide/create-custom-components.md).
 
