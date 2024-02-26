@@ -5,28 +5,37 @@ import useOuterClick from '../hooks/useOuterClick'
 import { setTimeout } from 'timers'
 import { usePathname } from 'next/navigation'
 
-
 type DropdownMenuProps = {
-  children: ReactNode,
-  icon?: string,
-  text?: string,
-  align?: string,
-  altText?: string,
-  closeOnRouteChange?: boolean,
+  children: ReactNode
+  icon?: string
+  text?: string
+  align?: string
+  altText?: string
+  closeOnRouteChange?: boolean
 }
 
-const DropdownMenu = ({children, icon, text, align, altText, closeOnRouteChange = true}: DropdownMenuProps) => {
+const DropdownMenu = ({ children, icon, text, align, altText, closeOnRouteChange = true }: DropdownMenuProps) => {
   const [expanded, setExpanded] = useState(false)
   const [menuVisible, setMenuVisible] = useState(false)
-  const ref: any = useRef()
+  const ref = useRef()
   const pathname = usePathname()
-  
+
   useOuterClick(ref.current, () => {
     setExpanded(false)
-    setTimeout(() => {setMenuVisible(false)}, 150)
+    setTimeout(() => {
+      setMenuVisible(false)
+    }, 150)
   })
-  
+
   useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setExpanded(false)
+      }
+    }
+
+    window.addEventListener('keyup', handleEsc)
+
     if (closeOnRouteChange) {
       let currentPathname = ''
 
@@ -34,6 +43,10 @@ const DropdownMenu = ({children, icon, text, align, altText, closeOnRouteChange 
         setExpanded(false)
         setMenuVisible(false)
       }
+    }
+
+    return () => {
+      window.removeEventListener('keyup', handleEsc)
     }
   }, [closeOnRouteChange, pathname])
 
@@ -43,21 +56,41 @@ const DropdownMenu = ({children, icon, text, align, altText, closeOnRouteChange 
       setMenuVisible(true)
     } else {
       setExpanded(false)
-      setTimeout(() => {setMenuVisible(false)}, 150)
+      setTimeout(() => {
+        setMenuVisible(false)
+      }, 150)
     }
   }
 
   return (
     <div className="relative w-full">
-      <div onClick={toggleDropdownMenu}>
-        {icon &&
-          <Image className="text-gray-500" src={`/assets/${icon}`} width={24} height={24} alt={altText ? altText : 'dropdown menu button'}></Image>
-        }
-        {text &&
-          <span className="select-none cursor-pointer">{text}</span>
-        }
+      <div
+        tabIndex={0}
+        onClick={toggleDropdownMenu}
+        onKeyUp={e => {
+          e.preventDefault()
+          e.stopPropagation()
+          if (e.key === 'Enter') {
+            toggleDropdownMenu()
+          } else if (e.key === 'Escape') {
+            setExpanded(false)
+          }
+        }}
+      >
+        {icon && (
+          <Image
+            className="text-gray-500"
+            src={`/assets/${icon}`}
+            width={24}
+            height={24}
+            alt={altText ? altText : 'dropdown menu button'}
+          ></Image>
+        )}
+        {text && <span className="select-none cursor-pointer">{text}</span>}
       </div>
-      <div ref={ref} className={`rounded-lg duration-100 absolute ${align} ${expanded ? 'top-12 opacity-100' : 'top-9 opacity-0'}`}>
+      <div
+        className={`rounded-lg duration-100 absolute ${align} ${expanded ? 'top-12 opacity-100' : 'top-9 opacity-0'}`}
+      >
         {menuVisible && children}
       </div>
     </div>
