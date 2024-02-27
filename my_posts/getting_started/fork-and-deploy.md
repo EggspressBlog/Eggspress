@@ -57,11 +57,13 @@ All we need to do is tell Vercel where our files are.
 
 We can do this by opening Vercel's [dashboard view](https://vercel.com/dashboard). On this page, click the "Add new..." button and select "Project" from the dropdown menu.
 
-If you chose "Continue with Github" to create your Vercel account earlier, you should see your repositories listed by default. 
+If you chose "Continue with Github" to create your Vercel account earlier, you should see your repositories listed by default.
 
-Click the "Import" button near the entry that corresponds with your Eggspress repository.
+If not, you may need to "Install" Vercel on Github first. You can do this by clicking the "Install" button. Then, from the pop-up window that appears, click "Install" again.
 
-Note: if you do not see your repository, please refer to Vercel's documentation on [importing projects](https://vercel.com/docs/getting-started-with-vercel/import) and for [troubleshooting](https://vercel.com/guides/unable-to-find-github-repository) missing repositories.
+Now click the "Import" button near the entry that corresponds with your Eggspress repository.
+
+Note: if you still do not see your repository, please refer to Vercel's documentation on [importing projects](https://vercel.com/docs/getting-started-with-vercel/import) and for [troubleshooting](https://vercel.com/guides/unable-to-find-github-repository) missing repositories.
 
 ![](Pasted%20image%2020231125172817.png)
 
@@ -71,7 +73,7 @@ On the "Configure project" screen:
 
 You do not need to configure anything else on this page.
 
-Click "Deploy" to build your new site. You will see status updates indicating the progress of your site build. During the "building" phase, Vercel runs your code and assembles all of the pages for your site. 
+	Click "Deploy" to build your new site. You will see status updates indicating the progress of your site build. During the "building" phase, Vercel runs your code and assembles all of the pages for your site. 
 
 This step usually takes the longest and it's not uncommon for it to last upwards of a minute.
 

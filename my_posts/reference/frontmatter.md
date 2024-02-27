@@ -14,7 +14,7 @@ category: "Reference"
 prevPost: ""
 nextPost: ""
 relatedPost1: "editing-content"
-relatedPost2: ""
+relatedPost2: "archive-and-hide"
 relatedPost3: ""
 relatedPost4: ""
 ---

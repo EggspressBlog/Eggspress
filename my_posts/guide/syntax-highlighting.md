@@ -28,6 +28,10 @@ relatedPost8: ""
 relatedPost9: ""
 ---
 
+```python
+print("hello world!")
+```
+
 Need to share a code snippet? Eggspress integrates [highlight.js](https://highlightjs.org/), a library that applies syntax highlighting to your code blocks.
 
 Code blocks are highlighted in different themes depending on whether dark mode is toggled.
