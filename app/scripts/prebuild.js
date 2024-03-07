@@ -115,6 +115,7 @@ const setFontFamily = async path => {
               'app/_components/UserFont.tsx',
               `import {${fontFamily}} from 'next/font/google'\nconst font = ${fontFamily}({ subsets: ['latin'], })\nexport default font`
             )
+            console.log(`import {${fontFamily}} from 'next/font/google'\nconst font = ${fontFamily}({ subsets: ['latin'], })\nexport default font`)
             console.log("wrote font", fontFamily)
           }
           break
