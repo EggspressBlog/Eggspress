@@ -1,5 +1,5 @@
 ---
-fontFamily: "Roboto Flex"
+fontFamily: "Raleway"
 colorScheme: "docs"
 
 sidebar: "index"
