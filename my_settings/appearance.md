@@ -1,5 +1,5 @@
 ---
-fontFamily: "Readex Pro"
+fontFamily: "Roboto Mono"
 colorScheme: "docs"
 
 sidebar: "index"
