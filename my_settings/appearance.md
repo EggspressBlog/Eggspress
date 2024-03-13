@@ -1,5 +1,5 @@
 ---
-fontFamily: "Readex_Pro"
+fontFamily: "Readex Pro"
 colorScheme: "docs"
 
 sidebar: "index"
