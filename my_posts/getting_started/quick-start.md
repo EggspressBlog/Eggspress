@@ -164,7 +164,7 @@ To set your new site's name to "My New Website," set:
 
 `title: "My New Website"`
 
-> If you are using a custom domain, you **must** provide a value to `metaBaseUrl` (e.g. `https://eggspress.org` is the value for this documentation site). 
+> If you are using a custom domain, you **must** provide a value to `metaBaseUrl` (e.g. `https://eggspress.vercel.app` is the value for this documentation site). 
 > 
 > Otherwise, you **must** leave this blank.
 

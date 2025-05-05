@@ -74,7 +74,7 @@ You can reference an image by its slug. All images referenced must be stored som
 Links may be internal or external. If you are linking internally, you should try to create a relative link (beginning with a forward slash, "/"). 
 
 The easiest way to do this is to remove everything up through the top-level domain. For example, if we wanted to link to this post in a sidebar, we would take:
-`https://eggspress.org/blog/using-sidebars`
+`https://eggspress.vercel.app/blog/using-sidebars`
 
 And drop the domain, ending up with:
 
