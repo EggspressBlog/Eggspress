@@ -9,7 +9,7 @@ indexSubtitlePrefix: ""
 indexTitle: "Eggspress Docs"
 metaTitle: "Eggspress Docs"
 metaDescription: "Eggspress is a fast, free, and lightweight blogging platform that you control. Designed for easy deployment, Eggspress lets anyone with a little technical know-how launch their very own site. Publish as you please."
-metaBaseUrl: "https://eggspress.org"
+metaBaseUrl: "https://eggspress.vercel.app"
 ogDescription: "Eggspress Docs, the official documentation for Eggspress"
 ogImageFilename: "og_logo.png"
 ogImageWidth: 192
